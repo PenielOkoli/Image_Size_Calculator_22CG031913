@@ -1,0 +1,116 @@
+/* Styling Architecture strictly for 22CG031913 */
+:root {
+    --okoli-primary: #2c3e50;
+    --okoli-accent: #e74c3c;
+    --okoli-bg: #ecf0f1;
+    --okoli-text: #34495e;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--okoli-bg);
+    color: var(--okoli-text);
+}
+
+.okoli-grid-layout-031913 {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.tochukwu-calc-module {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(44, 62, 80, 0.15);
+    width: 100%;
+    max-width: 420px;
+    border-top: 5px solid var(--okoli-primary);
+}
+
+.app-header-cg031913 h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.4rem;
+    color: var(--okoli-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.auth-badge {
+    display: inline-block;
+    font-size: 0.8rem;
+    background: var(--okoli-primary);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.tochukwu-field-wrapper {
+    margin-bottom: 1.2rem;
+}
+
+.tochukwu-field-wrapper label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.tochukwu-field-wrapper input,
+.tochukwu-field-wrapper select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #bdc3c7;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.tochukwu-field-wrapper input:focus,
+.tochukwu-field-wrapper select:focus {
+    border-color: var(--okoli-accent);
+}
+
+.okoli-execute-btn {
+    width: 100%;
+    background: var(--okoli-accent);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.okoli-execute-btn:hover {
+    background: #c0392b;
+}
+
+#output_pane_tochukwu {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-left: 4px solid var(--okoli-accent);
+    border-radius: 4px;
+}
+
+.hide-pane {
+    display: none;
+}
+
+.res-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.res-row strong {
+    color: var(--okoli-accent);
+}
