@@ -1,0 +1,12 @@
+{
+  "name": "calc-22cg031913-tochukwu",
+  "version": "1.0.0",
+  "description": "Custom scale analyzer built exclusively for T. Okoli",
+  "main": "server_22CG031913.js",
+  "scripts": {
+    "start": "node server_22CG031913.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
