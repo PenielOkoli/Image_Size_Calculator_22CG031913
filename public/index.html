@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T. Okoli | 22CG031913 Scale Analyzer</title>
+    <link rel="stylesheet" href="okoli_theme.css">
+</head>
+<body>
+    <main class="okoli-grid-layout-031913">
+        <section class="tochukwu-calc-module">
+            <header class="app-header-cg031913">
+                <h1>Scale Dimension Processor</h1>
+                <span class="auth-badge">Auth: Tochukwu Okoli (22CG031913)</span>
+            </header>
+            
+            <form id="form_okoli_core">
+                <div class="tochukwu-field-wrapper">
+                    <label for="inp_img_22CG031913">Observed Dimension:</label>
+                    <input type="number" id="inp_img_22CG031913" step="any" required>
+                </div>
+
+                <div class="tochukwu-field-wrapper">
+                    <label for="sel_unit_22CG031913">Measurement Scale:</label>
+                    <select id="sel_unit_22CG031913">
+                        <option value="mm">Base (mm)</option>
+                        <option value="cm">Macro (cm)</option>
+                    </select>
+                </div>
+
+                <div class="tochukwu-field-wrapper">
+                    <label for="inp_mag_22CG031913">Lens Power (x):</label>
+                    <input type="number" id="inp_mag_22CG031913" step="any" required>
+                </div>
+
+                <button type="submit" class="okoli-execute-btn">Compute Dimensions</button>
+            </form>
+
+            <article id="output_pane_tochukwu" class="hide-pane">
+                <h3>Computed Outputs:</h3>
+                <div class="res-row">
+                    <span>Absolute (mm):</span>
+                    <strong id="out_mm_cg031913">--</strong>
+                </div>
+                <div class="res-row">
+                    <span>Micro (μm):</span>
+                    <strong id="out_um_cg031913">--</strong>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="okoli_logic.js"></script>
+</body>
+</html>
